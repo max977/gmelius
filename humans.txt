@@ -1,0 +1,12 @@
+/* Gmelius */
+Title:      Florian Bersier
+Position:   Developer
+Site:       http://www.florianbersier.com
+Twitter:    @xpressyoo
+
+/* SITE */
+Language:   English
+Standards:  HTML5, CSS(3), JavaScript, jQuery
+
+/* Gmelius Extensions */
+Standards: CSS(3), JavaScript, jQuery
