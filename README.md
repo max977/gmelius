@@ -10,4 +10,4 @@ Gmelius proposes a software of quality by releasing new features and correcting 
 
 ----------------------------------------------
 
-_©2012-2013 Gmelius™http://gmelius.com by [Florian Bersier](http://florianbersier.com) - Gmail is a trademark of Google Inc._
+_©2012-2013 Gmelius™ by [Florian Bersier](http://florianbersier.com) - Gmail is a trademark of Google Inc._
