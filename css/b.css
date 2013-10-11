@@ -112,6 +112,7 @@ header a:hover {
 
 .wr {
 	width:90%;
+	min-width:900px;
 	max-width:1100px;
 	margin:0 auto;
 	}
@@ -136,10 +137,9 @@ nav a:hover {
 	}
 
 #subnav {
-	position:absolute;
-	top:3px;
-	margin-left:48%;
+	float:right;
 	width:auto;
+	margin:-93px 1% 0 0;
 	text-align:center;
 	background-color:#f3f3f3;
 	font-size:.7em;
@@ -168,20 +168,20 @@ nav a:hover {
 .banner {
 	width:100%;
 	height:400px;
-	background:#eee;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	margin-bottom:20px;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 
 #help {
-background:url('../IMG/help.jpg') no-repeat bottom center;
+background:url('../IMG/help.jpg') #eee no-repeat bottom center;
 }
 #bla {
 	font-size:4em;
 	font-weight:700;
-	width:38%;
+	width:40%;
 	margin-top:80px;
 	overflow:hidden;
 	float:right;
@@ -216,7 +216,7 @@ background:url('../IMG/help.jpg') no-repeat bottom center;
 
 #share {
 	text-align:center;
-	margin:20px auto 0;
+	margin:0 auto;
 	}
 
 #share ul {
@@ -246,11 +246,11 @@ li.fb {
 	}
 
 #don-txt {
-	width:57%
+	width:56%
 	}
 
 #donate {
-	width:32%;
+	width:33%;
 	min-width:240px;
 	margin:15px auto 0;
 	background-color:#1096D5;
@@ -264,7 +264,8 @@ li.fb {
 	line-height:30px;
 	padding:0 5px;
 	color:#555;
-	background:#fff
+	background:#fff;
+	vertical-align:top
 	}
 
 #donate input.text {
@@ -296,6 +297,7 @@ li.fb {
 #footer {
 	background-color:#f1f1f1;
 	border-top:3px solid #dadada;
+	border-bottom:4px solid #D14836;
 	padding:30px 0;
 	margin-top:4%;
 	clear:both
@@ -314,7 +316,7 @@ li.fb {
 	font-size:11px;
 	width:290px;
 	color:#999;
-	margin:0 200px 0 1%;
+	margin:0 12% 0 1%;
 	}
 
 #footer h5 {
@@ -334,3 +336,30 @@ margin:0
 	color:#555;
 	font-size:.8em
 	}
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+	background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #e1e1e1;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.10),inset 0 -1px 0 rgba(0,0,0,0.07);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #ccc
+}
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #fff;
+}
+
