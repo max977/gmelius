@@ -39,11 +39,31 @@
 
 <body>
 <div id="fb-root"></div>
+
 <header>
 <div class="wr">
 <h1><a id="logo" href="../">Gmelius</a></h1>
-</div>
 
+<!-- Primary Navigation -->
+<nav>
+<ul class="ulno" role="navigation">
+<li><a href="../#download">Download</a>
+<li><a href="../#features">Features</a>
+<li><a href="../#about">About</a>
+</ul>
+</nav>
+
+<!-- Secondary Navigation -->
+<div id="subnav">
+<ul class="ulno">
+<li><a href="../help" title="Installation and configuration">Help</a>
+<li><a href="#privacy">Privacy</a>
+<li><a href="#support" title="Feedback and bugs">Support</a>
+<li><a href="../beta" title="Beta channel">Beta</a>
+</ul>
+</div><!-- #subnav -->
+
+</div><!-- .wr -->
 </header><!-- End header -->
 
 <div class="banner" id="help">
@@ -58,7 +78,7 @@
 <div id="share" class="sshare"></div>
 <hr class="first">
 <h2>Configuration</h2>
-<p>To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius. You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing the preferences.</p>
+<p>To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius and click on "preferences". You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing the preferences.</p>
 <hr><br>
 
 <div id="don-txt" class="left">
@@ -92,14 +112,54 @@
 <div class="clear"></div>
 
 <hr>
-<h2>Changelog</h2>
-A full change log is available on <a href="https://github.com/xpressyoo/gmelius/wiki/Changelog" target="_blank">Github</a>.
-</div>
-<!--SHARE-->
+<h2 id="privacy">Privacy</h2>
+<p>To be clear and to the point, Gmelius will never access, read, store, alter or transmit your personal data. If you are a Chrome user, the "Your tabs and browsing activity" permission comes from  the fact that this extension modifies the style and user interface of Gmail within your browser and so needs to know whether Gmail is open in one or several of your tabs to apply those changes.</p>
 
+<p>Moreover, Gmelius code meets the latest Content Security Policy (CSP) recommendations, making sure its users can keep browsing the Web safely.</p>
+
+<hr>
+<h2 id="support">Support</h2>
+<p>This is the place to leave your feedback, suggestions and bugs. Before posting anything, please ensure to download and run the latest version of Gmelius. Always include the operating system, browser version and Gmelius version you are using when sharing a bug, e.g. <i>Windows 8 - Firefox 22 - Gmelius 5.7.5</i>.</p>
+
+<div data-uv-inline="classic_widget" data-uv-mode="full" data-uv-primary-color="#333" data-uv-link-color="#1097d5" data-uv-default-mode="feedback" data-uv-forum-id="226621" data-uv-support-tab_name="Support" data-uv-feedback-tab_name="Feedback & Ideas" data-uv-width="100%" data-uv-height="300px"></div>
+
+<hr>
+<h2>Changelog</h2>
+<p>A full change log is available on <a href="https://github.com/xpressyoo/gmelius/wiki/Changelog" target="_blank">Github</a>.</p>
+
+</div><!-- .main -->
+
+<div id="footer">
+<div class="wr">
+<ul class="ulno">
+<li class="copyright">Copyright &copy; <span id="year"></span> Gmelius&trade;. All rights reserved. Gmail is a trademark of Google, Inc.
+<li class="nav-foot"><h5>Download links</h5>
+		<ul class="sn">
+		<li><a href="" target="_blank" title="Get Gmelius for Chrome">Google Chrome</a>
+		<li><a href="" target="_blank" title="Get Gmelius for Firefox">Mozilla Firefox</a>
+		<li><a href="" target="_blank" title="Get Gmelius for Opera">Opera</a>
+		</ul>
+<li class="nav-foot"><h5>Quick Navigation</h5>
+		<ul class="sn">
+		<li><a href="../#features" target="_blank">Features</a>
+		<li><a href="../help" target="_blank">Help and support</a>
+		<li><a href="../beta" target="_blank">Beta channel</a>
+		<li><a href="../#about" target="_blank">About Gmelius</a>
+		</ul>
+<li class="nav-foot"><h5>Follow us</h5>
+		<ul class="sn">
+		<li><a href="https://plus.google.com/107464590830116243309/" target="_blank" title="Follow Gmelius on Google+">Google+</a>
+		<li><a href="https://www.facebook.com/adremover" target="_blank" title="Follow Gmelius on Facebook">Facebook</a>
+		<li><a href="https://twitter.com/gmeliusTM" target="_blank" title="Follow Gmelius on Twitter">Twitter</a>
+		</ul>
+</ul>
+</div>
+</div><!--#footer-->
 <div id="share-box" class="sshare"></div>
 <!--JS-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../js/global.js"></script>
+<!-- UserVoice JavaScript SDK (only needed once on a page) -->
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/Ekhcmg0VWXMfhSRSzDMfg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
 </body>
 </html>
