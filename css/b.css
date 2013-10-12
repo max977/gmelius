@@ -88,7 +88,7 @@ header {
 	width:100%;
 	height:auto;
 	border-top:3px solid #D14836;
-	border-bottom:2px solid #dadada;
+	border-bottom:2px solid #e1e1e1;
 	}
 
 header a:hover {
@@ -103,7 +103,8 @@ header a:hover {
 	padding-left:70px;
 	line-height:50px;
 	color:#333;
-	font-size:.85em
+	font-size:.9em;
+	font-weight:normal
 	}
 
 #logo:hover {
@@ -136,6 +137,14 @@ nav a:hover {
 	color:#D14836
 	}
 
+nav i {
+	margin-left:5px;
+	}
+
+nav .selected {
+	color:#D14836;
+}
+
 #subnav {
 	float:right;
 	width:auto;
@@ -151,18 +160,19 @@ nav a:hover {
 	}
 
 #subnav li a{
-	padding:6px 17px;
+	padding:6px 25px;
 	display:inline-block;
-	border-left:1px solid #dadada
+	border-left:1px solid #dadada;
 	}
 
 #subnav li:first-child a{
 	border-left:0
 	}
 
-#subnav li a:hover{
-	background:#f7f7f7
+#subnav li a:hover, #subnav .selected {
+	background-color:#f7f7f7
 	}
+
 
 /* BANNER */
 .banner {
@@ -175,18 +185,124 @@ nav a:hover {
 	background-size: cover !important;
 	}
 
+.home.banner {
+	margin-bottom:0
+	}
+
+.banner h1 {
+	margin: 0 auto;
+	color:#fff;
+	font-size:inherit;
+	}
+
+.home h1 {
+	padding-top:55px;
+	text-align:center;
+	font-size:4.1em;
+	}
+
+.home h4 {
+	text-align:center;
+	margin:7px 0 0;
+	padding:0;
+	font-size:16px;
+	font-weight:normal;
+	color:#fff
+}
+
+.home h4 span {
+	font-size:12px;
+	vertical-align:top;
+	color:#f3f3f3
+}
+
+.home h4 a {
+	display:inline-block;
+	font-size:12px;
+	border:1px solid #fff;
+	margin-left:5px;
+	vertical-align:middle;
+	line-height:16px;
+	padding:0 3px;
+	color:#fff;
+	border-radius:3px
+	}
+
+.home h4 a:hover {
+	text-decoration:none;
+	background:#fff;
+	color:#adcbc9
+}
+
+.beta .left {
+	font-size:4em;
+	font-weight:700;
+	width:57%;
+	margin-top:90px;
+	overflow:hidden;
+	color:#fff
+	}
+
+.beta .right {
+	width:40%;
+	margin-top:120px
+	}
+
+.banner #download {
+	display:block;
+	height:auto;
+	padding:20px;
+	color:#fff;
+	margin:40px auto 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0;
+	border-radius:1px;
+	line-height:1.45em
+	}
+
+.home #download {
+	background-color:#D14836;
+	margin-top:50px;
+	width:270px;
+}
+
+.beta #download {
+	background-color:#fab000;
+	width:250px;
+}
+
+#download:hover {
+	text-decoration:none;
+	opacity:.9;
+	box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 0;
+	}
+
+.t {
+margin-left:55px;
+display:inline-block
+}
+
+#download .details {
+font-size:0.85em;
+color:#f7f7f7
+}
+
+#download i{
+	position:absolute;
+	font-size:2.6em;
+	margin-top:3px
+	}
+
+.home {
+background:url('../IMG/home.jpg') #eee no-repeat top center;
+}
+
 #help {
 background:url('../IMG/help.jpg') #eee no-repeat bottom center;
 }
-#bla {
-	font-size:4em;
-	font-weight:700;
-	width:40%;
-	margin-top:80px;
-	overflow:hidden;
-	float:right;
-	color:#fff
-	}
+
+.beta {
+background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
+}
 
 #vid {
 	margin:30px 0 0;
@@ -199,19 +315,77 @@ background:url('../IMG/help.jpg') #eee no-repeat bottom center;
 	border-radius:4px;
 	overflow:hidden
 	}
-	
+
+/* PRESS */
+.press {
+	background-color:#eee;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e5e5e5), to(#fff));
+	background: -webkit-linear-gradient(top, #e5e5e5, #fff);
+	background: -moz-linear-gradient(top, #e5e5e5, #fff);
+	background: -ms-linear-gradient(top, #e5e5e5, #fff);
+	background: -o-linear-gradient(top, #e5e5e5, #fff);
+	border-top:2px solid #e1e1e1;
+	height:165px;
+	width:100%;
+	margin-bottom:-10px;
+	}
+
+.press ul {
+	padding:22px 0 0;
+	}
+
+.press li {
+	margin-left:6%;
+	width:20%
+	}
+
+.press li:first-child,#share li:first-child {
+	margin:0
+	}
+
+.press i {
+	margin:0 6px;
+	font-size:.8em;
+	color:#bbb;
+	vertical-align:top;
+	white-space:nowrap;
+	}
+
+.press span {
+	color:#666;
+	font-style:italic;
+	font-size:1em;
+	line-height:1.45em
+}
+
+.press a span {
+	color:#888;
+}
+
+.press a{
+	display:block;
+	margin:7px 12px 0 0;
+	text-align:right
+	}
 /* MAIN */
+
+.main {
+	margin:0 auto 30px
+	}
 
 .main.wr {
 	font-size:.85em;
 	clear:both;
 	width:88%;
 	max-width:1070px;
-	margin:0 auto 30px
 	}
 
 .main p {
-	line-height:1.4em
+	line-height:1.5em
+	}
+
+#about {
+	padding-top:10px
 	}
 
 #share {
@@ -221,15 +395,17 @@ background:url('../IMG/help.jpg') #eee no-repeat bottom center;
 
 #share ul {
 	display:inline-block;
-	list-style:none
+	list-style:none;
+	width:100%
 	}
 
 #share li {
 	display:inline-block;
-	vertical-align:top
+	vertical-align:top;
+	margin-left:3%
 	}
 
-li.fb {
+.fb {
 	width:94px;
 	text-align:left
 	}
@@ -245,6 +421,155 @@ li.fb {
 	margin:25px auto 0;
 	}
 
+#features h2 i, #privacy i, #support i, #changelog i, #configuration i {
+	display:inline-block;
+	margin:0 10px 0 -40px;
+	width:22px;
+	height:22px;
+	text-align:center;
+	line-height:22px;
+	padding:3px;
+	font-size:.85em;
+	border-radius:22px
+	}
+
+#features h2 i {
+	background:#fff;
+	color:#ccc;
+	}
+
+#privacy i,#privacy i, #support i, #changelog i, #config i, #configuration i {
+	background:#f1f1f1;
+	color:#aaa;
+	}
+/* FEATURES */
+
+#features {
+	width:100%;
+	background-color:#f7f7f7;
+	margin:40px auto;
+	padding:25px 0
+	}
+
+#features .wr {
+    margin:0 auto;
+    }
+
+#features section {
+    clear: both;
+    padding: 30px 0;
+    vertical-align: top;
+}
+
+#features section.first {
+    margin-top: 0;
+    padding-top:0
+}
+
+#features section div:nth-child(odd) {
+    margin-left: 30px;
+}
+
+#features .desc {
+    width:62%;
+	max-width:750px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 23px;
+}
+
+#features .desc.desc0 {
+    width: 100%;
+}
+
+#features .thumb {
+    width: 300px;
+    display: inline-block;
+    border-radius: 2px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-shadow: 4px 4px 4px #ddd;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#gads {
+    background: url(../IMG/global.png) transparent no-repeat 0 0;
+    height: 180px;
+}
+
+#gheader {
+    background: url(../IMG/global.png) transparent no-repeat 0 -193px;
+    height: 110px;
+}
+
+#goldcompose {
+    background: url(../IMG/global.png) transparent no-repeat 0 -1425px;
+    height: 155px;
+}
+
+#gprint {
+    background: url(../IMG/global.png) transparent no-repeat 0 -1593px;
+    height: 110px;
+}
+
+#gpeople {
+    background: url(../IMG/global.png) transparent no-repeat 0 -310px;
+    height: 163px;
+}
+
+#gnav {
+    background: url(../IMG/global.png) transparent no-repeat 0 -495px;
+    height: 110px;
+}
+
+#ghover {
+    background: url(../IMG/global.png) transparent no-repeat 0 -621px;
+    height: 135px;
+}
+
+#gfonts {
+    background: url(../IMG/global.png) transparent no-repeat 0 -768px;
+    height: 170px;
+}
+
+#attach {
+    background: url(../IMG/global.png) transparent no-repeat 0 -946px;
+    height: 80px;
+}
+
+#gconsider {
+    background: url(../IMG/global.png) transparent no-repeat 0 -1040px;
+    height: 130px;
+}
+
+#logo-click {
+    background: url(../IMG/global.png) transparent no-repeat 0 -1182px;
+    height: 110px;
+}
+
+#backto {
+    background: url(../IMG/global.png) transparent no-repeat 0 -1304px;
+    height: 110px;
+}
+
+#labels-inbox {
+    background: url(../IMG/global.png) transparent no-repeat 0 -2220px;
+    height: 120px;
+}
+
+#attach-inbox {
+    background: url(../IMG/global.png) transparent no-repeat 0 -2362px;
+    height: 128px;
+}
+
+#deobfuscate {
+    background: url(../IMG/global.png) transparent no-repeat 0 -2504px;
+    height: 135px;
+}
+
+/* DONATE */
+
 #don-txt {
 	width:56%
 	}
@@ -259,7 +584,7 @@ li.fb {
 	}
 
 #donate input, #donate select {
-	border:1px solid #dadada;
+	border:0;
 	height:30px;
 	line-height:30px;
 	padding:0 5px;
@@ -270,7 +595,7 @@ li.fb {
 
 #donate input.text {
 	width:65px;
-	height:28px;
+	height:30px;
 	text-align:center
 	}
 
@@ -281,7 +606,6 @@ li.fb {
 	font-weight:700;
 	background:orange;
 	color:#fff;
-	border:1px solid orange
 	}
 
 #donate .button:hover {
@@ -297,7 +621,7 @@ li.fb {
 #footer {
 	background-color:#f1f1f1;
 	border-top:3px solid #dadada;
-	border-bottom:4px solid #D14836;
+	border-bottom:10px solid #D14836;
 	padding:30px 0;
 	margin-top:4%;
 	clear:both
@@ -314,9 +638,15 @@ li.fb {
 #footer .copyright {
 	text-transform:uppercase;
 	font-size:11px;
-	width:290px;
+	width:320px;
 	color:#999;
 	margin:0 12% 0 1%;
+	line-height:18px;
+	}
+
+.copyright .go {
+	display:block;
+	color:#c5c5c5
 	}
 
 #footer h5 {
@@ -336,6 +666,9 @@ margin:0
 	color:#555;
 	font-size:.8em
 	}
+
+/* ADS */
+.gmelius-new { height: 90px;margin:30px auto 0;text-align:center;border:0;width:100%; }
 
 /* SCROLLBARS */
 ::-webkit-scrollbar {

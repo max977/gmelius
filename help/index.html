@@ -4,7 +4,7 @@
 <title>Gmelius | Help</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="description" content="" />
+<meta name="description" content="Help and support page for Gmelius." />
 <link rel="stylesheet" type="text/css" href="../css/b.css" />
 <link rel="stylesheet" type="text/css" href="../css/f.css" />
 <!--FAVICON-->
@@ -48,18 +48,18 @@
 <!-- Primary Navigation -->
 <nav>
 <ul class="ulno" role="navigation">
-<li><a href="../#download">Download</a>
-<li><a href="../#features">Features</a>
+<li><a href="../#download">Download<i class="icon-angle-down"></i></a>
 <li><a href="../#about">About</a>
+<li><a href="../#features">Features</a>
 </ul>
 </nav>
 
 <!-- Secondary Navigation -->
 <div id="subnav">
 <ul class="ulno">
-<li><a href="../help" title="Installation and configuration">Help</a>
-<li><a href="#support" title="Feedback and bugs">Support</a>
-<li><a href="#privacy">Privacy</a>
+<li><a href="../help" title="Installation and configuration" class="selected">Help</a>
+<li><a href="#support" title="Feedback and bugs" class="slow">Support</a>
+<li><a href="#privacy" class="slow">Privacy</a>
 <li><a href="../beta" title="Beta channel">Beta</a>
 </ul>
 </div><!-- #subnav -->
@@ -69,8 +69,8 @@
 
 <div class="banner" id="help">
 	<div class="wr">
-	<div class="left" id="vid"><iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/D44zaBoaKu0?wmode=transparent;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe></iframe></div>
-	<div id="bla">
+	<div class="left" id="vid"><iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/D44zaBoaKu0?wmode=transparent;rel=0;showinfo=0;controls=0" frameborder="0" allowfullscreen></iframe></div>
+	<div id="bla" class="right">
 	Say hi to Gmelius for <span id="browser"></span>.
 	</div></div>
 	<div class="clear"></div>
@@ -79,13 +79,13 @@
 <div class="wr main">
 <div id="share" class="sshare"></div>
 <hr class="first">
-<h2>Configuration</h2>
+<h2 id="configuration"><i class="icon-wrench"></i>Configuration</h2>
 <p id="config"></p>
 
 <hr><br>
 
 <div id="don-txt" class="left">
-<p>Gmelius is "honor-ware", which means that we trust each other to be nice. We are committed to propose a software of quality by releasing new features and correcting possible bugs on a constant basis <strong>but we need your support</strong>. Give a try to Gmelius, and if you decide to keep it, ensure to donate a small amount.</p>
+<p>Gmelius is "honor-ware", which means that we trust each other to be nice. We are committed to propose a software of quality by releasing new features and correcting possible bugs on a constant basis <strong>but we need your support</strong>. Give a try to Gmelius, and if you intend to keep it, ensure to donate a small amount.</p>
 
 <p>As a user, please note that it's your responsibilty to ensure that you always run the latest version of the extension. Updates are announced via  <a href="https://plus.google.com/107464590830116243309/" rel="publisher" target="_blank" title="Follow Gmelius&trade; on Google+">Google+</a>, <a href="https://www.facebook.com/adremover" target="_blank" title="Follow Gmelius&trade; on Facebook">Facebook</a> and <a href="https://twitter.com/gmeliusTM" target="_blank" title="Follow Gmelius&trade; on Twitter">Twitter</a>, and it is highly recommended to follow Gmelius on either of these networks to be kept updated.</p>
 </div>
@@ -115,18 +115,18 @@
 <div class="clear"></div>
 
 <hr>
-<h2 id="privacy">Privacy</h2>
+<h2 id="privacy"><i class="icon-lock"></i>Privacy</h2>
 <p>To be clear and to the point, Gmelius will never access, read, store, alter or transmit your personal data. If you are a Chrome user, the "Your tabs and browsing activity" permission comes from  the fact that this extension modifies the style and user interface of Gmail within your browser and so needs to know whether Gmail is open in one or several of your tabs to apply those changes.</p>
 <p>Moreover, Gmelius code meets the latest Content Security Policy (CSP) recommendations, making sure its users can keep browsing the Web safely.</p>
 
 <hr>
-<h2 id="support">Support</h2>
+<h2 id="support"><i class="icon-bug"></i>Support</h2>
 <p>This is the place to leave your feedback, suggestions and bugs. Before posting anything, please ensure to download and run the latest version of Gmelius. Always include the operating system, browser version and Gmelius version you are using when sharing a bug, e.g. <i><span id="OS"></span> - <span id="brwver"></span> - Gmelius 5.7.5</i>.</p>
 
 <div data-uv-inline="classic_widget" data-uv-mode="full" data-uv-primary-color="#333" data-uv-link-color="#1097d5" data-uv-default-mode="support" data-uv-forum-id="226621" data-uv-support-tab_name="Support" data-uv-feedback-tab_name="Feedback and ideas" data-uv-width="100%" data-uv-height="300px"></div>
 
 <hr>
-<h2>Changelog</h2>
+<h2 id="changelog"><i class="icon-github"></i>Changelog</h2>
 <p>A full change log is available on <a href="https://github.com/xpressyoo/gmelius/wiki/Changelog" target="_blank">Github</a>.</p>
 
 </div><!-- .main -->
@@ -134,7 +134,7 @@
 <div id="footer">
 <div class="wr">
 <ul class="ulno">
-<li class="copyright">Copyright &copy; <span id="year"></span> Gmelius&trade;. All rights reserved. Gmail is a trademark of Google, Inc.
+<li class="copyright">Copyright &copy; <span id="year"></span> Gmelius&trade;. All rights reserved.<span class="go">Gmail is a trademark of Google, Inc.</span>
 <li class="nav-foot"><h5>Download links</h5>
 		<ul class="sn">
 		<li><a href="https://chrome.google.com/webstore/detail/gmelius-ad-blocker-and-be/dheionainndbbpoacpnopgmnihkcmnkl" target="_blank" title="Get Gmelius for Chrome">Google Chrome</a>
