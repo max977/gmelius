@@ -234,14 +234,22 @@ nav .selected {
 	color:#adcbc9
 }
 
-.beta .left {
+.beta .left, #help .right {
 	font-size:4em;
 	font-weight:700;
-	width:57%;
-	margin-top:90px;
 	overflow:hidden;
 	color:#fff
 	}
+
+.beta .left {
+	width:57%;
+	margin-top:90px;
+}
+
+#help .right {
+	width:40%;
+	margin-top:80px;
+}
 
 .beta .right {
 	width:40%;
