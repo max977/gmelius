@@ -316,6 +316,10 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	overflow:hidden
 	}
 
+#vid iframe {
+	border:0
+	}
+
 /* PRESS */
 .press {
 	background-color:#eee;
