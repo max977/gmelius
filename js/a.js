@@ -183,7 +183,7 @@ $(function() {
 	if($('body').hasClass('hel')) {
 	var beta = getUrlVars()['v'];
 	
-		if (brw ==='chrome' && beta === 'beta') {
+		if (brw ==='chrome' && premium === 'premium') {
 			$('#config').append(configbeta);
 		} else {
 			$('#config').append(config);
