@@ -117,7 +117,7 @@ $(function() {
 		compbeta = 'Compatibility | From Chrome 20';
 	} else if (brw === 'firefox') {
 		config = 'To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius and click on "preferences". <a href="../#features" title="view full list of features">Features</a> are enabled by ticking their corresponding checkboxes. You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
-		getlink = 'https://addons.mozilla.org/addon/gmail-ad-remover?src=external-gmelius';
+		getlink = 'https://addons.mozilla.org/firefox/downloads/latest/120014/addon-120014-latest.xpi?src=external-gmelius';
 		betalink = 'http://beta.gmelius.com/gmelius.xpi';
 		compatibility = 'From Firefox 19';
 		compbeta = 'Compatibility | From Firefox 19';
