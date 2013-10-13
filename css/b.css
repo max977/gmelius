@@ -279,8 +279,8 @@ nav .selected {
 
 #download:hover {
 	text-decoration:none;
-	opacity:.9;
-	box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 0;
+	opacity:0.96;
+	border-radius:5px
 	}
 
 .t {
