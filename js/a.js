@@ -110,7 +110,7 @@ $(function() {
 	var version = u.version;
     var config, getlink, betalink, compatibility, compbeta;
 	if (brw === 'chrome') {
-		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. Don\'t forget to save your settings and check your Gmail inbox. <u>Tip</u>: If you wish to remove Gmelius icon from the Chrome toolbar, right-click on it and select "Hide Button".';
+		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. Don\'t forget to save your settings and check your Gmail inbox. <u>Tip</u>: To remove Gmelius icon from the Chrome toolbar, right-click on it and select "Hide Button".';
 		configbeta = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
 		betalink = 'http://beta.gmelius.com/gmelius.crx';
 		compatibility = 'From Chrome 20';
