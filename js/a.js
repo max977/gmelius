@@ -111,7 +111,7 @@ $(function() {
     var config, getlink, betalink, compatibility, compbeta;
 	if (brw === 'chrome') {
 		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
-		configbeta = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
+		configpremium = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
 		betalink = 'http://beta.gmelius.com/gmelius.crx';
 		compatibility = 'From Chrome 20';
 		compbeta = 'Compatibility | From Chrome 20';
@@ -181,10 +181,10 @@ $(function() {
 
 	
 	if($('body').hasClass('hel')) {
-	var beta = getUrlVars()['v'];
+	var premium = getUrlVars()['v'];
 	
 		if (brw ==='chrome' && premium === 'premium') {
-			$('#config').append(configbeta);
+			$('#config').append(configpremium);
 		} else {
 			$('#config').append(config);
 		}
