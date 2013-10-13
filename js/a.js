@@ -108,21 +108,25 @@ $(function() {
 	var browser = u.browser;
 	var brw = browser.toLowerCase();
 	var version = u.version;
-    var config, getlink, betalink, compatibility;
+    var config, getlink, betalink, compatibility, compbeta;
 	if (brw === 'chrome') {
 		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
-		betalink = '../beta/chrome.crx';
+		configbeta = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://aaglbfecklmmmhkeflgjophggkbejkpe/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
+		betalink = 'http://beta.gmelius.com/gmelius.crx';
 		compatibility = 'From Chrome 20';
+		compbeta = 'Compatibility | From Chrome 20';
 	} else if (brw === 'firefox') {
 		config = 'To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius and click on "preferences". You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
 		getlink = 'https://addons.mozilla.org/addon/gmail-ad-remover?src=external-gmelius';
-		betalink = '../beta/firefox.xpi';
+		betalink = 'http://beta.gmelius.com/gmelius.xpi';
 		compatibility = 'From Firefox 19';
+		compbeta = 'Compatibility | From Firefox 19';
 	} else if (brw === 'opera') {
 		config = 'To configure Gmelius in Opera, go to Extensions <i class="icon-angle-right"></i> Manage Extensions <i class="icon-angle-right"></i> Gmelius and click on the wrench icon <i class="icon-wrench"></i>. You may need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
 		getlink = 'https://addons.opera.com/extensions/download/gmelius-no-ads-and-better-ui-for-gmail/';
-		betalink = '../beta/opera.oex';
+		betalink = 'http://beta.gmelius.com/gmelius.oex';
 		compatibility = 'From Opera 11';
+		compbeta = 'Not available for Opera';
 	} else {
 		config = 'Unfortunately, Gmelius is not available for your browser. You can get it for <a href="https://chrome.google.com/webstore/detail/gmelius-ad-blocker-and-be/dheionainndbbpoacpnopgmnihkcmnkl" target="_blank" title="Get Gmelius for Chrome">Google Chrome</a>, <a href="https://addons.mozilla.org/firefox/addon/gmail-ad-remover/" target="_blank" title="Get Gmelius for Firefox">Mozilla Firefox</a> or <a href="https://addons.opera.com/extensions/details/gmelius-no-ads-and-better-ui-for-gmail/" target="_blank" title="Get Gmelius for Opera">Opera</a>.';
 		getlink = '#';
@@ -154,13 +158,38 @@ $(function() {
 			scrollTop: $(clicked).offset().top
 		}, 1000);
 	});
+	
+	// URL Parameters
+	function getUrlVars(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+	}
+	
 	// HTML
 	$('#year').append(year);
 	$('#OS').append(OS);
 	$('#browser').append(browser);
 	$('#brwver').append(browser + ' ' + version);
 	$('#share').append(share);
-	$('#config').append(config);
+
+	
+	if($('body').hasClass('hel')) {
+	var beta = getUrlVars()['v'];
+	
+		if (brw ==='chrome' && beta === 'beta') {
+			$('#config').append(configbeta);
+		} else {
+			$('#config').append(config);
+		}
+	}
+	
 	if ($('.banner').hasClass('home')) {
 		$('#compatibility').append(compatibility);
 		if (brw === 'chrome') {
@@ -172,5 +201,6 @@ $(function() {
 		}
 	} else if ($('.banner').hasClass('beta')) {
 		$('#download').prop('href', betalink);
+		$('#compbeta').append(compbeta);
 	}
 }); // End jQuery ready

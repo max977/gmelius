@@ -71,7 +71,7 @@
 	<div class="wr">
 	<div id="bla" class="left"><h1>Gmelius<br>Beta Channel.</h1></div>
 	<div class="right">
-	<a href="" id="download"><i class="icon-download"></i><span class="t"><strong>Download Gmelius Beta</strong><br><span class="details">For <span id="browser"></span> - version 5.7.6</span></span></a>
+	<a href="" id="download"><i class="icon-download"></i><span class="t"><strong>Download Gmelius Beta</strong><br><span class="details"><span id="compbeta"></span></span></span></a>
 	</div></div>
 	<div class="clear"></div>
 </div><!-- .banner -->
@@ -80,7 +80,7 @@
 <div id="share" class="sshare"></div>
 <hr class="first">
 <br>
-
+<p>Gmelius Beta lets you play with the newest Gmelius features. Let us know what you think and do not hesitate to <a hfref="#" data-uv-trigger="smartvote">share your ideas</a>. By downloading the Beta version, you'll always get the latest performance and feature updates. Note - though - that the Beta version can be a little rough around the edges. Ensure to deactivate Gmelius stable from your browser after installing Gmelius Beta in order to avoid any conflicts.
 <div id="don-txt" class="left">
 <p>Gmelius is "honor-ware", which means that we trust each other to be nice. We are committed to propose a software of quality by releasing new features and correcting possible bugs on a constant basis <strong>but we need your support</strong>. Give a try to Gmelius, and if you intend to keep it, ensure to donate a small amount.</p>
 
@@ -111,19 +111,6 @@
 </div><!--#donate-->
 <div class="clear"></div>
 <hr>
-<script>
-// Include the UserVoice JavaScript SDK (only needed once on a page)
-UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/Ekhcmg0VWXMfhSRSzDMfg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-// Set colors
-UserVoice.push(['set', {
-  accent_color: '#448dd6',
-  trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-}]);
-
-UserVoice.push(['addTrigger', { mode: 'smartvote', trigger_position: 'bottom-right' }]);
-UserVoice.push(['autoprompt', {}]);
-</script>
 </div><!-- .main -->
 
 <!-- FOOTER -->
@@ -157,5 +144,18 @@ UserVoice.push(['autoprompt', {}]);
 <!--JS-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../js/a.js"></script>
+<script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/Ekhcmg0VWXMfhSRSzDMfg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+// Set colors
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+}]);
+
+UserVoice.push(['addTrigger', { mode: 'smartvote', trigger_position: 'bottom-right' }]);
+UserVoice.push(['autoprompt', {}]);
+</script>
 </body>
 </html>
