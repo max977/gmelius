@@ -420,6 +420,11 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	width:94px;
 	text-align:left
 	}
+
+.main h2 {
+	font-weight:normal
+	}
+
 .main hr {
 	width:50%;
 	height:1px;
