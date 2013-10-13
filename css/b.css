@@ -432,6 +432,14 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	margin:25px auto 0;
 	}
 
+#config span {
+	color:#999;
+	background-color:#f1f1f1;
+	display:inline-block;
+	padding:0 4px;
+	font-size:.85em
+	}
+
 #features h2 i, #privacy i, #support i, #changelog i, #configuration i {
 	display:inline-block;
 	margin:0 10px 0 -40px;

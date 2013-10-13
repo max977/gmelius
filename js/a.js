@@ -110,25 +110,25 @@ $(function() {
 	var version = u.version;
     var config, getlink, betalink, compatibility, compbeta;
 	if (brw === 'chrome') {
-		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
-		configpremium = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> and select the features you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
+		config = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. Don\'t forget to save your settings and check your Gmail inbox. <u>Tip</u>: If you wish to remove Gmelius icon from the Chrome toolbar, right-click on it and select "Hide Button".';
+		configbeta = 'To configure Gmelius in Chrome, go to the <a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. Don\'t forget to save your settings and check your Gmail inbox.';
 		betalink = 'http://beta.gmelius.com/gmelius.crx';
 		compatibility = 'From Chrome 20';
 		compbeta = 'Compatibility | From Chrome 20';
 	} else if (brw === 'firefox') {
-		config = 'To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius and click on "preferences". You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
+		config = 'To configure Gmelius in Firefox, go to Tools <i class="icon-angle-right"></i> Add-ons <i class="icon-angle-right"></i> Extensions <i class="icon-angle-right"></i> Gmelius and click on "preferences". <a href="../#features" title="view full list of features">Features</a> are enabled by ticking their corresponding checkboxes. You will need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
 		getlink = 'https://addons.mozilla.org/addon/gmail-ad-remover?src=external-gmelius';
 		betalink = 'http://beta.gmelius.com/gmelius.xpi';
 		compatibility = 'From Firefox 19';
 		compbeta = 'Compatibility | From Firefox 19';
 	} else if (brw === 'opera') {
-		config = 'To configure Gmelius in Opera, go to Extensions <i class="icon-angle-right"></i> Manage Extensions <i class="icon-angle-right"></i> Gmelius and click on the wrench icon <i class="icon-wrench"></i>. You may need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
+		config = 'To configure Gmelius in Opera, go to Extensions <i class="icon-angle-right"></i> Manage Extensions <i class="icon-angle-right"></i> Gmelius and click on the wrench icon <i class="icon-wrench"></i>. <a href="../#features" title="view full list of features">Features</a> are enabled by ticking their corresponding checkboxes. You may need to <a href="https://mail.google.com" title="reload Gmail now">reload Gmail</a> after changing your preferences.';
 		getlink = 'https://addons.opera.com/extensions/download/gmelius-no-ads-and-better-ui-for-gmail/';
 		betalink = 'http://beta.gmelius.com/gmelius.oex';
 		compatibility = 'From Opera 11';
 		compbeta = 'Not available for Opera';
 	} else {
-		config = 'Unfortunately, Gmelius is not available for your browser. You can get it for <a href="https://chrome.google.com/webstore/detail/gmelius-ad-blocker-and-be/dheionainndbbpoacpnopgmnihkcmnkl" target="_blank" title="Get Gmelius for Chrome">Google Chrome</a>, <a href="https://addons.mozilla.org/firefox/addon/gmail-ad-remover/" target="_blank" title="Get Gmelius for Firefox">Mozilla Firefox</a> or <a href="https://addons.opera.com/extensions/details/gmelius-no-ads-and-better-ui-for-gmail/" target="_blank" title="Get Gmelius for Opera">Opera</a>.';
+		config = 'Gmelius is not available for your browser. You can get it for <a href="https://chrome.google.com/webstore/detail/gmelius-ad-blocker-and-be/dheionainndbbpoacpnopgmnihkcmnkl" target="_blank" title="Get Gmelius for Chrome">Google Chrome</a>, <a href="https://addons.mozilla.org/firefox/addon/gmail-ad-remover/" target="_blank" title="Get Gmelius for Firefox">Mozilla Firefox</a> or <a href="https://addons.opera.com/extensions/details/gmelius-no-ads-and-better-ui-for-gmail/" target="_blank" title="Get Gmelius for Opera">Opera</a>.';
 		getlink = '#';
 		betalink = '../beta/#';
 		compatibility = 'Browser not supported';
@@ -182,9 +182,12 @@ $(function() {
 	
 	if($('body').hasClass('hel')) {
 	var premium = getUrlVars()['v'];
+	var GmVersion = getUrlVars()['version'];
 	
 		if (brw ==='chrome' && premium === 'premium') {
-			$('#config').append(configpremium);
+			$('#config').append(configbeta);
+		} else if (brw ==='chrome' && GmVersion !== undefined){
+			$('#config').append('Gmelius <span>' + GmVersion + '</span> has been successfully installed. ' + config);
 		} else {
 			$('#config').append(config);
 		}
