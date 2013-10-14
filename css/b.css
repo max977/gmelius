@@ -698,6 +698,8 @@ margin:0
 /* ADS */
 .gmelius-new { height: 90px;margin:20px auto 0;text-align:center;border:0;width:100%; }
 
+@media(min-width: 800px) { .gmelius-new { width: 728px; height: 90px; } }
+
 /* SCROLLBARS */
 ::-webkit-scrollbar {
 	width: 9px;
