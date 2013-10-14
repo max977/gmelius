@@ -246,6 +246,10 @@ nav .selected {
 	margin-top:90px;
 }
 
+.beta .left span {
+	font-weight:normal
+}
+
 #help .right {
 	width:40%;
 	margin-top:80px;
