@@ -173,6 +173,23 @@ nav .selected {
 	background-color:#f7f7f7
 	}
 
+#google_translate_element {
+	float:right;
+	margin:-53px 1% 0 0;
+	}
+
+.goog-te-menu-value span {
+	color:#333;
+	border:0 !important
+	}
+
+.goog-te-gadget-icon {
+	display:none
+	}
+
+.goog-te-gadget-simple {
+	border:1px solid #eee !important;
+	}
 
 /* BANNER */
 .banner {
