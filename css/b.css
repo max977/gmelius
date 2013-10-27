@@ -390,7 +390,9 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	color:#666;
 	font-style:italic;
 	font-size:1em;
-	line-height:1.45em
+	line-height:1.45em;
+	display:inline-block;
+	margin-right:7px
 }
 
 .press a span {
@@ -399,9 +401,14 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 
 .press a{
 	display:block;
-	margin:7px 12px 0 0;
+	margin:7px 0 0;
 	text-align:right
 	}
+
+.press a:hover span{
+	text-decoration:none;
+}
+
 /* MAIN */
 
 .main {
