@@ -14,6 +14,9 @@ body {
 	color: #333;
 }
 
+iframe {
+	overflow-y: hidden !important;
+	}
 
 ul {
 	margin: 0;
@@ -743,3 +746,11 @@ margin:0
 	background-color: #fff;
 }
 
+/* Small Res */
+@media only screen and (max-width: 1100px) {
+	#help .right {
+	width:36%;
+	margin:80px 0 0 4%;
+	font-size:3.6em
+	}
+}
