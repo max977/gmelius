@@ -98,6 +98,11 @@ $(function() {
 		return vars;
 	}
 	// HTML
+	$('#showadav').hide();
+	$('#adav').on('click', function(){
+		if ( $(this).hasClass('on') ) { $('#showadav').hide();$(this).removeClass('on');$('#indic').removeClass('icon-angle-up').addClass('icon-angle-down');}
+		else { $('#showadav').show();$(this).addClass('on');$('#indic').removeClass('icon-angle-down').addClass('icon-angle-up');}
+	});
 	$('#year').append(year);
 	$('#OS').append(OS);
 	$('#browser').append(browser);

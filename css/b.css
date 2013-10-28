@@ -468,6 +468,36 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	margin:25px auto 0;
 	}
 
+#adav {
+	display:block;
+	margin:9px 0 0 4px;
+	font-size:0.8em;
+	text-transform:uppercase
+	}
+
+#adav i{
+	color:#999;
+	margin-right:6px;
+	display:inline-block
+	}
+
+#adav:hover i{
+	text-decoration:none
+	}
+#showadav {
+	font-size:0.85em;
+	color:#555;
+	margin:5px 15px 0 5px !important;
+	background:#eee;
+	padding:12px;
+	border-radius:5px
+	}
+
+blockquote {
+	margin:8px 15px 0;
+	font-style:italic
+	}
+
 #config span {
 	color:#999;
 	background-color:#f1f1f1;
