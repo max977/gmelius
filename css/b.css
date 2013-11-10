@@ -45,7 +45,7 @@ ul {
 }
 
 .none {
-	display: none;
+	display: none
 }
 
 a {
@@ -523,7 +523,7 @@ blockquote {
 	color:#ccc;
 	}
 
-#privacy i,#privacy i, #support i, #changelog i, #config i, #configuration i {
+#privacy i,#privacy i, #support i, #changelog i, #configuration i {
 	background:#f1f1f1;
 	color:#aaa;
 	}
@@ -663,10 +663,29 @@ blockquote {
 	width:33%;
 	min-width:240px;
 	margin:15px auto 0;
-	background-color:#1096D5;
-	color:#fff;
+
 	padding:1.5% 3%;
 	}
+
+.blue {
+	background-color:#1096D5;
+	color:#fff;
+}
+
+#bitc,#paypalbtn {
+	color:#fff;
+	font-weight:normal;
+	margin-left:10px;
+	font-size:0.85em
+}
+
+#bitcdon {
+	text-align:center
+}
+
+#bitcdon iframe{
+	height:40px !important
+}
 
 #donate input, #donate select {
 	border:0;
@@ -754,6 +773,23 @@ margin:0
 
 /* ADS */
 .gmelius-new,.gmelius-help { height: 90px;margin:20px auto 0;text-align:center;border:0;width:100%; }
+
+.gmelius-help{
+	background-color:#eee;
+	padding:12px 0;
+}
+
+.gmelius-reco {
+	position:absolute;
+	z-index:3;
+	display:inline-block;
+	height:24px;
+	line-height:24px;
+	text-transform:uppercase;
+	font-size:.75em;
+	padding:0 10px;
+	margin-top:20px
+}
 
 @media(min-width: 800px) { .gmelius-new { width: 728px; height: 90px; } }
 

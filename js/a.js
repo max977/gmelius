@@ -103,6 +103,14 @@ $(function() {
 		if ( $(this).hasClass('on') ) { $('#showadav').hide();$(this).removeClass('on');$('#indic').removeClass('icon-angle-up').addClass('icon-angle-down');}
 		else { $('#showadav').show();$(this).addClass('on');$('#indic').removeClass('icon-angle-down').addClass('icon-angle-up');}
 	});
+	$('#bitc').on('click', function(){
+		$('#ppdon,#pptxt,#bitc').hide().addClass('none');
+		$('#bitcdon,#bitctxt,#paypalbtn').show().removeClass('none');
+	});
+	$('#paypalbtn').on('click', function(){
+		$('#bitcdon,#bitctxt,#paypalbtn').hide().addClass('none');
+		$('#ppdon,#pptxt,#bitc').show().removeClass('none');
+	});
 	$('#year').append(year);
 	$('#OS').append(OS);
 	$('#browser').append(browser);

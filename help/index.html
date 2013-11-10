@@ -89,13 +89,13 @@
 </div>
 
 <!--DONATE-->
-<div id="donate" class="right">
-<h4>Thank you !</h4>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<div id="donate" class="right blue">
+<h4>Thank you ! <a id="bitc" title="Donate Bitcoins">Prefer Bitcoins ?</a><a id="paypalbtn" class="none" title="Back to standard currencies">Prefer PayPal/Credit cards ?</a></h4>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" id="ppdon">
 <input type="hidden" name="cmd" value="_donations" />
 <input name="business" value="VX7F8AMVUY35W" type="hidden" />
 <input name="item_name" value="Gmelius, A Better Gmail" type="hidden" />
-<input name="no_note" value="0" type="hidden" />              
+<input name="no_note" value="0" type="hidden" />
 <input name="tax" value="0" type="hidden" />
 <input name="no_shipping" value="1" type="hidden" />
 <input name="return" value="#" type="hidden" />
@@ -108,15 +108,19 @@
 </select>
 <input class="button" type="submit" value="donate" />
 </form>
-<p class="pay"><i class="icon-lock"></i> Secure payment by PayPal. Credit cards accepted.</p>
+<div id="bitcdon" class="none">
+<a class="coinbase-button" data-code="112c1e0142ed8473aae574b1d278046d" data-button-style="donation_large" href="https://coinbase.com/checkouts/112c1e0142ed8473aae574b1d278046d">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+</div>
+<p class="pay"><i class="icon-lock"></i> <span id="pptxt">Secure payment by PayPal. Credit cards accepted.</span><span id="bitctxt" class="none">Powered by Coinbase.com</span></p>
 </div><!--#donate-->
 <div class="clear"></div>
 
 <!-- Gmelius Help -->
+<span class="gmelius-reco blue">Recommended by Gmelius. Try it !</span>
 <div class="gmelius-help">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
-     style="display:inline-block;width:970px;height:90px"
+     style="display:inline-block;max-width:970px;height:90px"
      data-ad-client="ca-pub-0201365754416796"
      data-ad-slot="8815797767"></ins>
 <script>
