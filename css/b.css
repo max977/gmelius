@@ -457,6 +457,7 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 
 #about li {
 	margin:5px 0;
+	overflow:hidden
 	}
 
 #about li span {
@@ -477,10 +478,12 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	text-transform:uppercase
 	}
 
-.std{
+.std a{
 	height:24px;
 	line-height:24px;
 	padding:0 0 0 10px;
+	display:inline-block;
+	width:100%;
 	font-size:.95em;
  }
 
@@ -489,7 +492,7 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	text-decoration:none
 	}
 
-.std:hover,.stdb:hover {
+.std a:hover,.stdb:hover {
 	background-color:#eee
 	}
 
@@ -502,13 +505,13 @@ ul .sub {
 	width:100% !important
 	}
 
-.sub .stdb {
+.sub .stdb a{
 	margin:2px 0 2px !important;
 	line-height:20px;
 	padding-left:42px;
 	height:20px;
 	font-size:.95em;
-	width:calc(100% - 42px)
+	width:100%
 	}
 
 #share {
