@@ -457,7 +457,6 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 
 #about li {
 	margin:5px 0;
-	overflow:hidden
 	}
 
 #about li span {
@@ -476,6 +475,10 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	border-radius:2px;
 	margin:-15px 0 15px;
 	text-transform:uppercase
+	}
+
+.std {
+	overflow:hidden
 	}
 
 .std a{
