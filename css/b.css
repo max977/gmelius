@@ -91,7 +91,7 @@ header {
 	width:100%;
 	height:auto;
 	border-top:3px solid #D14836;
-	border-bottom:2px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
 	}
 
 header a:hover {
@@ -216,14 +216,14 @@ nav .selected {
 	}
 
 .home h1 {
-	padding-top:55px;
+	padding-top:50px;
 	text-align:center;
 	font-size:4.1em;
 	}
 
 .home h4 {
 	text-align:center;
-	margin:7px 0 0;
+	margin:0;
 	padding:0;
 	font-size:16px;
 	font-weight:normal;
@@ -375,7 +375,7 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	}
 
 .press li:first-child,#share li:first-child {
-	margin:0
+	margin-left:0
 	}
 
 .press i {
@@ -423,11 +423,92 @@ background:url('../IMG/beta.jpg') #eee no-repeat bottom center;
 	}
 
 .main p {
-	line-height:1.5em
+	line-height:1.55em
 	}
 
 #about {
-	padding-top:10px
+	margin-top:20px
+	}
+
+
+#about p {
+	line-height:1.7em;
+	font-size:1.1em;
+	}
+
+#about ul {
+	width:16%;
+	margin:0 0 0 -5px;
+	padding:0;
+	list-style:none
+	}
+
+#about .right {
+	width:83%;
+	margin-top:10px
+	}
+
+#flet {
+	display:inline-block;
+	border-left:2px solid #1096D5;
+	padding-left:10px;
+	margin-left:-10px;
+	}
+
+#about li {
+	margin:5px 0;
+	}
+
+#about li span {
+	display:inline-block;
+	font-size:.8em
+	}
+
+#whatis span{
+	width:112px;
+	font-weight:bold;
+	color:#fff;
+	background-color: #D14836;
+	height:27px;
+	line-height:27px;
+	text-align:center;
+	border-radius:2px;
+	margin:-15px 0 15px;
+	text-transform:uppercase
+	}
+
+.std{
+	height:24px;
+	line-height:24px;
+	padding:0 0 0 10px;
+	font-size:.95em;
+ }
+
+#about li a {
+	color:#333;
+	text-decoration:none
+	}
+
+.std:hover,.stdb:hover {
+	background-color:#eee
+	}
+
+.std i {
+	margin-right:6px;
+	color:#777
+	}
+
+ul .sub {
+	width:100% !important
+	}
+
+.sub .stdb {
+	margin:2px 0 2px !important;
+	line-height:20px;
+	padding-left:42px;
+	height:20px;
+	font-size:.95em;
+	width:calc(100% - 42px)
 	}
 
 #share {
@@ -506,16 +587,15 @@ blockquote {
 	font-size:.85em
 	}
 
-#features h2 i, #privacy i, #support i, #changelog i, #configuration i {
+#features h2 i, #privacy i, #support i, #changelog i, #configuration i, #dona i {
 	display:inline-block;
-	margin:0 10px 0 -40px;
-	width:22px;
-	height:22px;
+	margin:0 20px 0 -50px;
+	width:30px;
+	height:30px;
 	text-align:center;
-	line-height:22px;
-	padding:3px;
-	font-size:.85em;
-	border-radius:22px
+	line-height:30px;
+	font-size:.7em;
+	border-radius:30px
 	}
 
 #features h2 i {
@@ -523,7 +603,7 @@ blockquote {
 	color:#ccc;
 	}
 
-#privacy i,#privacy i, #support i, #changelog i, #configuration i {
+#privacy i,#privacy i, #support i, #changelog i, #configuration i, #dona i{
 	background:#f1f1f1;
 	color:#aaa;
 	}
@@ -532,8 +612,9 @@ blockquote {
 #features {
 	width:100%;
 	background-color:#f7f7f7;
-	margin:40px auto;
-	padding:25px 0
+	margin:0 auto 50px;
+	padding:50px 0 25px;
+	border-bottom:3px solid #f9f9f9
 	}
 
 #features .wr {
@@ -777,7 +858,7 @@ margin:0
 .gmelius-help{
 	background-color:#eee;
 	padding:12px 0;
-	margin-top:30px
+	margin-top:35px
 }
 
 .gmelius-reco {
@@ -791,7 +872,7 @@ margin:0
 	text-transform:uppercase;
 	font-size:.75em;
 	padding:0 10px;
-	margin-top:8px
+	margin-top:13px
 }
 
 @media(min-width: 800px) { .gmelius-new { width: 728px; height: 90px; } }
