@@ -1,3 +1,7 @@
+/**
+ * Gmelius Website core JS code
+ * Author: Florian Bersier
+ */
 $(function() {
 	// Year
 	var d = new Date();
@@ -186,3 +190,4 @@ $(function() {
 		$('#compbeta').append(compbeta);
 	}
 }); // End jQuery ready
+
