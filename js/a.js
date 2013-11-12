@@ -37,8 +37,11 @@ $(function() {
 		config = 'To configure Gmelius in Chrome, go to the ' +
 					'<a href="chrome-extension://dheionainndbbpoacpnopgmnihkcmnkl/options.html" target="_blank">options page</a> ' + 
 					'and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. ' +
-					'Don\'t forget to save your settings and check your Gmail inbox. <u>Tip</u>: ' +
-					'To remove Gmelius icon from the Chrome toolbar, right-click on it and select "Hide Button".';
+					'Don\'t forget to save your settings and check your Gmail inbox.' +
+					'<h4>A few tips & tricks</h4><ul class="ti">' +
+					'<li>To remove Gmelius icon from the Chrome toolbar, right-click on it and select "Hide Button";' +
+					'<li>Type <code>gmelius options</code> in the address bar to go to the options page of Gmelius;' +
+					'<li>Need help? Read our <a href="https://gmelius.uservoice.com/knowledgebase" target="_blank">FAQ</a> or fill in the <a href="#support" class="slow">support form</a> below.</ul>';
 		configbeta = 'To configure Gmelius in Chrome, go to the ' +
 						'<a href="chrome-extension://kolcknldigimoipnaaalljghaahfpgbp/options.html" target="_blank">options page</a> ' +
 						'and select the <a href="../#features" title="view full list of features">features</a> you wish to activate. ' +
@@ -95,21 +98,20 @@ $(function() {
 		compatibility = 'Browser not supported';
 	}
 	// Share SNS
-	(function(a, e) {
-		var b, d = a.getElementsByTagName(e)[0],
-			c = function(g, f) {
-				if (a.getElementById(f)) {
-					return;
-				}
-				b = a.createElement(e);
-				b.src = g;
-				f && (b.id = f);
-				d.parentNode.insertBefore(b, d)
-			};
-		c("https://apis.google.com/js/plusone.js");
-		c("//connect.facebook.net/en_US/all.js#xfbml=1&appId=234524816574248", "facebook-jssdk");
-		c("//platform.twitter.com/widgets.js", "twitter-wjs")
-	}(document, "script"));
+	(function(w, d, s) {
+  	function go(){
+   	 var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+	  if (d.getElementById(id)) {return;}
+	  js = d.createElement(s); js.src = url; js.id = id;
+	  fjs.parentNode.insertBefore(js, fjs);
+	};
+		load('https://connect.facebook.net/en_US/all.js#xfbml=1&appId=234524816574248', 'facebook-jssdk');
+		load('https://apis.google.com/js/plusone.js');
+		load('https://platform.twitter.com/widgets.js', 'twitter-wjs');
+  }
+  if (w.addEventListener) { w.addEventListener("load", go, false); }
+  else if (w.attachEvent) { w.attachEvent("onload",go); }
+}(window, document, 'script'));
 	var share = '<ul><li class="go">' +
 				'<div class="g-plusone" data-size="medium" data-href="http://gmelius.com"></div>' +
 				'<li class="fb"><div class="fb-like" data-href="https://www.facebook.com/adremover" data-send="false"' +
