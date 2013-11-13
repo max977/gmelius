@@ -1,12 +1,26 @@
-/* Gmelius */
-Title:      Florian Bersier
-Position:   Developer
-Site:       http://www.florianbersier.com
-Twitter:    @xpressyoo
 
-/* SITE */
-Language:   English
-Standards:  HTML5, CSS(3), JavaScript, jQuery
 
-/* Gmelius Extensions */
-Standards: CSS(3), JavaScript, jQuery
+        GGGGGGGGGGGGG                                           lllllll   iiii                                     
+     GGG::::::::::::G                                           l:::::l  i::::i                                    
+   GG:::::::::::::::G                                           l:::::l   iiii                                     
+  G:::::GGGGGGGG::::G                                           l:::::l                                            
+ G:::::G       GGGGGG   mmmmmmm    mmmmmmm       eeeeeeeeeeee    l::::l iiiiiii uuuuuu    uuuuuu      ssssssssss   
+G:::::G               mm:::::::m  m:::::::mm   ee::::::::::::ee  l::::l i:::::i u::::u    u::::u    ss::::::::::s  
+G:::::G              m::::::::::mm::::::::::m e::::::eeeee:::::eel::::l  i::::i u::::u    u::::u  ss:::::::::::::s 
+G:::::G    GGGGGGGGGGm::::::::::::::::::::::me::::::e     e:::::el::::l  i::::i u::::u    u::::u  s::::::ssss:::::s
+G:::::G    G::::::::Gm:::::mmm::::::mmm:::::me:::::::eeeee::::::el::::l  i::::i u::::u    u::::u   s:::::s  ssssss 
+G:::::G    GGGGG::::Gm::::m   m::::m   m::::me:::::::::::::::::e l::::l  i::::i u::::u    u::::u     s::::::s      
+G:::::G        G::::Gm::::m   m::::m   m::::me::::::eeeeeeeeeee  l::::l  i::::i u::::u    u::::u        s::::::s   
+ G:::::G       G::::Gm::::m   m::::m   m::::me:::::::e           l::::l  i::::i u:::::uuuu:::::u  ssssss   s:::::s 
+  G:::::GGGGGGGG::::Gm::::m   m::::m   m::::me::::::::e         l::::::li::::::iu:::::::::::::::uus:::::ssss::::::s
+   GG:::::::::::::::Gm::::m   m::::m   m::::m e::::::::eeeeeeee l::::::li::::::i u:::::::::::::::us::::::::::::::s 
+     GGG::::::GGG:::Gm::::m   m::::m   m::::m  ee:::::::::::::e l::::::li::::::i  uu::::::::uu:::u s:::::::::::ss  
+        GGGGGG   GGGGmmmmmm   mmmmmm   mmmmmm    eeeeeeeeeeeeee lllllllliiiiiiii    uuuuuuuu  uuuu  sssssssssss  
+
+
+
+								Title:      Florian Bersier
+								Position:   Developer & Founder
+								Site:       http://florianbersier.com
+								Twitter:    @xpressyoo
+
