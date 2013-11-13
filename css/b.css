@@ -215,7 +215,7 @@ nav .selected {
 	font-size:inherit;
 	}
 
-.home h1 {
+.home h1, #thanks h1 {
 	padding-top:50px;
 	text-align:center;
 	font-size:4.1em;
@@ -329,6 +329,10 @@ background:url('../IMG/home.jpg') #eee no-repeat top center;
 
 #help {
 background:url('../IMG/help.jpg') #eee no-repeat bottom center;
+}
+
+#thanks {
+background:url('../IMG/thanks.jpg') #eee no-repeat bottom center;
 }
 
 .beta {
@@ -754,7 +758,6 @@ blockquote {
 	width:33%;
 	min-width:240px;
 	margin:15px auto 0;
-
 	padding:1.5% 3%;
 	}
 
@@ -778,20 +781,36 @@ blockquote {
 	height:40px !important
 }
 
-#donate input, #donate select {
+#amount {
+	width:80px;
+	background:#1096D5 !important
+}
+
+#donate input, #donate select, #donate output {
 	border:0;
 	height:30px;
 	line-height:30px;
-	padding:0 5px;
-	color:#555;
-	background:#fff;
+	text-align:center;
 	vertical-align:top
+	}
+
+#donate output {
+	display:inline-block;
+	width:35px;
+	font-weight:bold;
+}
+
+#donate select {
+	background:#fff;
+	color:#555;
+	font-size:.9em;
+	padding:0 0 0 5px;
 	}
 
 #donate input.text {
 	width:65px;
 	height:30px;
-	text-align:center
+	background:#fff;
 	}
 
 #donate .button {
@@ -801,6 +820,8 @@ blockquote {
 	font-weight:700;
 	background:orange;
 	color:#fff;
+	padding:0 5px;
+	margin-left:10px
 	}
 
 #donate .button:hover {
@@ -811,6 +832,27 @@ blockquote {
 	font-size:.85em;
 	}
 	
+
+/* THANK YOU */
+
+#thanks a {
+	display:block;
+	text-align:center;
+	width:250px;
+	margin:50px auto 0;
+	background-color:#1096D5;
+	height:70px;
+	line-height:70px;
+	text-decoration:none;
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0;
+	border-radius:1px;
+	opacity:.9;
+	color:#fff
+}
+
+#thanks a:hover {
+	opacity:1
+}
 
 /* FOOTER */
 #footer {

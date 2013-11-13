@@ -168,7 +168,14 @@ $(function() {
 	$('#share').append(share);
 	if ($('body').hasClass('hel')) {
 		var premium = getUrlVars()['v'];
+		var thanks = getUrlVars()['note'];
 		var GmVersion = getUrlVars()['version'];
+		
+		if ( thanks === 'thanks' ) {
+			$('#help').addClass('none');
+			$('#thanks').removeClass('none');
+		}
+		
 		if (isChrome && premium === 'premium') {
 			$('#config').append(configbeta);
 		} else if (isChrome && GmVersion !== undefined) {
