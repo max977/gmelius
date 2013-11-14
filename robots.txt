@@ -1,0 +1,4 @@
+# Robots.txt for Gmelius.com
+User-agent: *
+Disallow: 
+Sitemap: http://gmelius.com/sitemap.xml
