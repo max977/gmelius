@@ -674,77 +674,77 @@ blockquote {
 }
 
 #gads {
-    background: url(../IMG/global.png) transparent no-repeat 0 0;
+    background: url('../IMG/global.png') transparent no-repeat 0 0;
     height: 180px;
 }
 
 #gheader {
-    background: url(../IMG/global.png) transparent no-repeat 0 -193px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -193px;
     height: 110px;
 }
 
 #goldcompose {
-    background: url(../IMG/global.png) transparent no-repeat 0 -1425px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -1425px;
     height: 155px;
 }
 
 #gprint {
-    background: url(../IMG/global.png) transparent no-repeat 0 -1593px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -1593px;
     height: 110px;
 }
 
 #gpeople {
-    background: url(../IMG/global.png) transparent no-repeat 0 -310px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -310px;
     height: 163px;
 }
 
 #gnav {
-    background: url(../IMG/global.png) transparent no-repeat 0 -495px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -495px;
     height: 110px;
 }
 
 #ghover {
-    background: url(../IMG/global.png) transparent no-repeat 0 -621px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -621px;
     height: 135px;
 }
 
 #gfonts {
-    background: url(../IMG/global.png) transparent no-repeat 0 -768px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -768px;
     height: 170px;
 }
 
 #attach {
-    background: url(../IMG/global.png) transparent no-repeat 0 -946px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -946px;
     height: 80px;
 }
 
 #gconsider {
-    background: url(../IMG/global.png) transparent no-repeat 0 -1040px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -1040px;
     height: 130px;
 }
 
 #logo-click {
-    background: url(../IMG/global.png) transparent no-repeat 0 -1182px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -1182px;
     height: 110px;
 }
 
 #backto {
-    background: url(../IMG/global.png) transparent no-repeat 0 -1304px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -1304px;
     height: 110px;
 }
 
 #labels-inbox {
-    background: url(../IMG/global.png) transparent no-repeat 0 -2220px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -2220px;
     height: 120px;
 }
 
 #attach-inbox {
-    background: url(../IMG/global.png) transparent no-repeat 0 -2362px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -2362px;
     height: 128px;
 }
 
 #deobfuscate {
-    background: url(../IMG/global.png) transparent no-repeat 0 -2504px;
+    background: url('../IMG/global.png') transparent no-repeat 0 -2504px;
     height: 135px;
 }
 
@@ -865,7 +865,7 @@ blockquote {
 	}
 
 #footer .ulno {
-	width:100%
+	width:100%;
 	}
 
 #footer .ulno li {
@@ -875,9 +875,9 @@ blockquote {
 #footer .copyright {
 	text-transform:uppercase;
 	font-size:11px;
-	width:320px;
+	width:290px;
 	color:#999;
-	margin:0 12% 0 1%;
+	margin:0 13% 0 1%;
 	line-height:18px;
 	}
 
@@ -892,7 +892,21 @@ margin:0
 }
 
 #footer .nav-foot{
-	width:17%
+	width:14%
+	}
+
+#footer .badge {
+	margin:-7px 0 0;
+	position:absolute;
+	}
+
+#footer .badge a {
+	display:block;
+	height:116px;
+	width:100%;
+	background:url('../IMG/softpedia_award.gif') no-repeat 0 0;
+	background-size:contain !important;
+	text-indent:-9999px;
 	}
 
 #footer .sn li{
