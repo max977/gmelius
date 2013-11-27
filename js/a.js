@@ -205,5 +205,13 @@ $(function() {
 		$('#download').prop('href', betalink);
 		$('#compbeta').append(compbeta);
 	}
+	// Donate form
+	var randAmount = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
+	$('#donate output').append(randAmount);
+	$('#amount').val(randAmount);
+	$('#amount').change(function() {
+		var newValue = $(this).val();
+		$("#donate output").empty().append(newValue);
+	});
 }); // End jQuery ready
 
