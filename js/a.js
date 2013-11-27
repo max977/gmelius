@@ -176,9 +176,10 @@ $(function() {
 	if ($('body').hasClass('hel')) {
 		var premium = getUrlVars()['v'];
 		var thanks = getUrlVars()['note'];
+		var thxpaypal = getUrlVars()['merchant_return_link'];
 		var GmVersion = getUrlVars()['version'];
 		
-		if ( thanks === 'thanks' ) {
+		if ( thanks === 'thanks' || typeof thxpaypal !== 'undefined' ) {
 			$('#help').addClass('none');
 			$('#thanks').removeClass('none');
 		}
