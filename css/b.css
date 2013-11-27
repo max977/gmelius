@@ -833,6 +833,33 @@ blockquote {
 	}
 	
 
+.signature {
+	margin:23px 0 0 2%
+	}
+
+#flo {
+	display:inline-block;
+	height:32px;
+	width:32px;
+	background:url('../IMG/florian.jpg') no-repeat 0 0;
+	border-radius:3px;
+	margin-right:9px;
+	vertical-align:middle
+	}
+
+.signature a #nameflo {
+	color:#333;
+	border-bottom:1px dotted #999
+	}
+
+.signature a:hover {
+	text-decoration:none !important;
+	}
+
+.signature a:hover #nameflo{
+	border-bottom:1px solid #999
+	}
+
 /* THANK YOU */
 
 #thanks a {
