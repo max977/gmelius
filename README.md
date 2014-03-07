@@ -8,6 +8,11 @@ Gmelius is developed and maintained by [Florian Bersier](http://florianbersier.c
 
 ##Gmail API
 
+(coming soon)
+
+i) Access Gmail GLOBALS, i.e. main data about a Gmail user.
+ii) Create Gmail filters
+
 ##Updates
 
 Gmelius proposes a software of quality by releasing new features and correcting possible bugs on a constant basis. To be kept updated, follow Gmelius on [Facebook](https://www.facebook.com/adremover), [Google+](https://plus.google.com/+GmeliusTM/) or [Twitter](https://twitter.com/gmeliusTM).
