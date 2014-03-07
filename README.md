@@ -2,7 +2,7 @@
 
 ##About
 
-Gmelius customizes Gmail's interface to your liking and adds new nifty features to your favourite inbox. For further information, please visit the [official website](http://gmelius.com).
+Gmelius customizes Gmail's interface to your liking and adds nifty features to your favourite inbox. For further information, please visit the [official website](http://gmelius.com).
 
 Gmelius is developed and maintained by [Florian Bersier](http://florianbersier.com).
 
@@ -16,9 +16,6 @@ Gmelius proposes a software of quality by releasing new features and correcting 
 
 A changelog is available at [https://github.com/xpressyoo/gmelius/wiki/Changelog](https://github.com/xpressyoo/gmelius/wiki/Changelog)
 
-##Contact
-
-support@gmelius.com
 
 ----------------------------------------------
 
