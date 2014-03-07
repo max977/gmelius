@@ -10,8 +10,9 @@ Gmelius is developed and maintained by [Florian Bersier](http://florianbersier.c
 
 (coming soon)
 
-i) Access Gmail GLOBALS, i.e. main data about a Gmail user.
-ii) Create Gmail filters
+  i) Access and store Gmail GLOBALS, i.e. main data about a Gmail user.
+
+  ii) Create Gmail filters
 
 ##Updates
 
