@@ -89,9 +89,7 @@ strong,b,.bold {
 /* HEADER */
 header {
 	width:100%;
-	height:auto;
-	border-top:3px solid #D14836;
-	border-bottom:1px solid #e1e1e1;
+	height:80px;
 	}
 
 header a:hover {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Product">
 <head>
-<title>Gmelius | Help</title>
+<title>Gmelius - Help</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="description" content="Help and support page for Gmelius." />
@@ -25,13 +25,16 @@
 <meta itemprop="image" content="http://gmelius.com/IMG/logo100.png">
 <!--GA-->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30073001-1']);
+  _gaq.push(['_setDomainName', 'gmelius.com']);
+  _gaq.push(['_trackPageview']);
 
-  ga('create', 'UA-30073001-1', 'gmelius.com');
-  ga('send', 'pageview');
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
 </head>
 
@@ -50,16 +53,6 @@
 <li><a href="../#features">Features</a>
 </ul>
 </nav>
-
-<!-- Secondary Navigation -->
-<div id="subnav">
-<ul class="ulno">
-<li><a href="../help/" title="Installation and configuration" class="selected">Help</a>
-<li><a href="#support" title="Feedback and bugs" class="slow">Support</a>
-<li><a href="#privacy" class="slow">Privacy</a>
-<li><a href="../premium/" title="Gmelius Premium">Premium</a>
-</ul>
-</div><!-- #subnav -->
 
 </div><!-- .wr -->
 </header><!-- End header -->
@@ -86,67 +79,18 @@
 <h2 id="configuration"><i class="icon-wrench"></i>Configuration</h2>
 <p id="config"></p>
 
-<div id="don-txt" class="left">
-<p>Gmelius is "honor-ware", which means that we trust each other to be nice. My name is <a href="http://florianbersier.com" target="_blank">Florian Bersier</a>, a PhD student at the University of Oxford and the developer of Gmelius. I'm committed to propose a software of quality by releasing new features and correcting possible bugs on a constant basis but I need your support. Give a try to Gmelius, and if you intend to keep it, please sponsor its development by making a small donation. <strong>Thank you</strong>.</p>
-
-<p>As a user, note that it's your responsibilty to ensure that you always run the latest version of the extension. Updates are announced via  <a href="https://plus.google.com/107464590830116243309/" rel="publisher" target="_blank" title="Follow Gmelius&trade; on Google+">Google+</a>, <a href="https://www.facebook.com/adremover" target="_blank" title="Follow Gmelius&trade; on Facebook">Facebook</a> and <a href="https://twitter.com/gmeliusTM" target="_blank" title="Follow Gmelius&trade; on Twitter">Twitter</a>, and it is highly recommended to follow Gmelius on either of these networks to be kept updated.</p>
-</div>
-
-<!--DONATE-->
-<div id="donate" class="right blue">
-<h4>Thank you ! <a id="bitc" title="Donate Bitcoins">Prefer Bitcoins ?</a><a id="paypalbtn" class="none" title="Back to standard currencies">Prefer PayPal/Credit cards ?</a></h4>
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="ppdon" oninput="rangeOutput.value=amount.value">
-<input type="hidden" name="cmd" value="_donations" />
-<input name="business" value="VX7F8AMVUY35W" type="hidden" />
-<input name="item_name" value="Gmelius, A Better Gmail" type="hidden" />
-<input name="no_note" value="0" type="hidden" />
-<input name="tax" value="0" type="hidden" />
-<input name="no_shipping" value="1" type="hidden" />
-<input name="return" value="http://gmelius.com/help/?note=thanks&origin=sh" type="hidden" />
-<input type="range" id="amount" name="amount" min="3" max="50" step="1" value=""/>
-<output name="rangeOutput" for="amount"></output>
-<select name="currency_code" title="choose your currency">
-<option value="USD">USD ($)</option>
-<option value="EUR">EUR (€)</option>
-<option value="GBP">GBP (£)</option>
-<option value="CHF">CHF (Fr)</option>
-</select>
-<input class="button" type="submit" value="donate" />
-</form>
-<div id="bitcdon" class="none">
-<a class="coinbase-button" data-code="112c1e0142ed8473aae574b1d278046d" data-button-style="donation_large" href="https://coinbase.com/checkouts/112c1e0142ed8473aae574b1d278046d">Donate Bitcoins</a>
-</div>
-<p class="pay"><i class="icon-lock"></i> <span id="pptxt">Secure payment by PayPal. Credit cards accepted.</span><span id="bitctxt" class="none">Powered by Coinbase.com</span></p>
-</div><!--#donate-->
 <div class="clear"></div>
 
 <!-- Gmelius Help -->
-<span class="gmelius-reco">Recommended by Gmelius. Try it !</span>
-<div class="gmelius-help">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;max-width:970px;width:100%;height:90px"
-     data-ad-client="ca-pub-0201365754416796"
-     data-ad-slot="8815797767"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-
-<hr>
-<h2 id="privacy"><i class="icon-lock"></i>Privacy</h2>
-<p>To be clear and to the point, Gmelius will <u>never</u> access, read, store, alter or transmit your personal data. If you are a Chrome user, the permission warnings come from  the fact that this extension modifies the style and user interface of Gmail within your browser and so needs to know whether Gmail is open in one or several of your tabs to apply those changes to Gmail's subdomain (mail.google.com).</p>
-<p>Moreover, Gmelius code meets the latest Content Security Policy (CSP) recommendations, making sure its users can keep browsing the Web safely.</p>
-
 <hr>
 <h2 id="support"><i class="icon-bug"></i>Support</h2>
-<p>This is the place to leave your feedback, suggestions and bugs. Before posting anything, please ensure to run the latest version of Gmelius, and to read our <a href="https://gmelius.uservoice.com/knowledgebase" target="_blank"><strong>FAQ</strong></a>. Always include the operating system, browser version and Gmelius version you are using when sharing a bug, e.g. <i><span id="OS"></span> - <span id="brwver"></span> - Gmelius 5.7.5</i>.</p>
+<p>This is the place to leave your feedback, suggestions and bugs. Before posting anything, please ensure to run the latest version of Gmelius, and to read our <a href="https://gmelius.uservoice.com/knowledgebase" target="_blank"><strong>FAQ</strong></a>. Always include the Gmelius version you are using when sharing a bug, e.g. Gmelius 5.7.7</i>.</p>
 
-<div data-uv-inline="classic_widget" data-uv-mode="full" data-uv-primary-color="#333" data-uv-link-color="#1097d5" data-uv-default-mode="support" data-uv-forum-id="226621" data-uv-support-tab_name="Support" data-uv-feedback-tab_name="Feedback and ideas" data-uv-width="100%" data-uv-height="300px"></div>
+<div data-uv-inline="classic_widget" data-uv-mode="full" data-uv-primary-color="#333" data-uv-link-color="#1097d5" data-uv-default-mode="support" data-uv-forum-id="226621" data-uv-support-tab_name="Support" data-uv-feedback-tab_name="Feedback and ideas" data-uv-width="100%" data-uv-height="500px"></div>
 
 <hr>
 <h2 id="changelog"><i class="icon-github"></i>Changelog</h2>
-<p>A full change log is available on <a href="https://github.com/xpressyoo/gmelius/wiki/Changelog" target="_blank">Github</a>.</p>
+<p>A full change log is available on <a href="http://log.gmelius.com/" target="_blank">Github</a>.</p>
 
 </div><!-- .main -->
 
@@ -164,13 +108,12 @@
 		<ul class="sn">
 		<li><a href="../#features">Features</a>
 		<li><a href="../help/">Help and support</a>
-		<li><a href="../premium/">Gmelius Premium</a>
-		<li><a href="../#about">About Gmelius</a>
+		<li><a href="http://faq.gmelius.com/">Knowledge Base</a>
 		</ul>
 <li class="nav-foot"><h5>Follow us</h5>
 		<ul class="sn">
 		<li><a href="https://plus.google.com/+GmeliusTM" target="_blank" title="Follow Gmelius on Google+">Google+</a>
-		<li><a href="https://www.facebook.com/adremover" target="_blank" title="Follow Gmelius on Facebook">Facebook</a>
+		<li><a href="https://www.facebook.com/gmeliusTM" target="_blank" title="Follow Gmelius on Facebook">Facebook</a>
 		<li><a href="https://twitter.com/gmeliusTM" target="_blank" title="Follow Gmelius on Twitter">Twitter</a>
 		</ul>
 <li class="nav-foot badge"><a href="http://www.softpedia.com/progClean/Gmelius-for-Firefox-Clean-229377.html" target="_blank" title="Gmelius certified 100% clean by Softpedia">Gmelius certified 100% clean by Softpedia</a>
